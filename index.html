@@ -8,31 +8,31 @@
     <title>Product input Using Form and Local Storage</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form method="post" onsubmit="onSubmit()">
         <label for="">Product Name</label>
         <input type="text" name="" id="prodName" minlength="2" maxlength="100" placeholder="(6 - 100 Characters)" required>
         <label for="">Price</label>
-        <input type="text" placeholder="Rp. xxx.xxx.xxx" id="prodPrice" required>
+        <input type="number" placeholder="Example: 2000 (in Rp)" id="prodPrice" required>
         <label for="">Product Picture</label>
         <input type="file" accept="image/* " id="prodPic" required>
         <br>
-        <button type="submit" value="submit" onsubmit="">Submit</button>
+        <button type="submit" value="submit">Submit</button>
     </form>
 
     <!-- Data stored in local storage -->
     <h1 class="data">Product in the cart:</h1>
     <table class="table-data" border="1">
         <tbody>
-            <tr>
+            <tr id="table-heading">
                 <td>Product</td>
-                <td>Quantity</td>
-                <td>Price * Qty</td>
+                <td>Image</td>
+                <td>Price</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="2">TOTAL PRICE</td>
-                <td></td>
+                <td id="total-price"></td>
             </tr>
         </tfoot>
     </table>
