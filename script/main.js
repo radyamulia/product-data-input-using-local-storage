@@ -44,7 +44,7 @@ function composeDataRow({ name, price, picture }) {
   const pictureCol = document.createElement("td");
 
   nameCol.textContent = name;
-  priceCol.textContent = price;
+  priceCol.textContent = `Rp ${price}`;
   pictureCol.textContent = picture;
 
   dataRow.appendChild(nameCol);
