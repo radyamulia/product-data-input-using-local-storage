@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Product input Using Form and Local Storage</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="">Product Name</label>
+        <input type="text" name="" id="prodName" minlength="2" maxlength="100" placeholder="(6 - 100 Characters)" required>
+        <label for="">Price</label>
+        <input type="text" placeholder="Rp. xxx.xxx.xxx" id="prodPrice" required>
+        <label for="">Product Picture</label>
+        <input type="file" accept="image/* " id="prodPic" required>
+        <br>
+        <button type="submit" value="submit" onsubmit="">Submit</button>
+    </form>
+</body>
+<script src="./script/main.js"></script>
+</html>
