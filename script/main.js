@@ -62,13 +62,13 @@ function renderDataRows() {
 
   if (data.length) {
     console.log("rendering data");
-    const tableHeading = document.getElementById("table-heading");
+    const tableBody = document.getElementById("table-body");
     const totalPrice = document.getElementById("total-price");
     let total = 0;
 
     data.forEach((product) => {
       const dataRow = composeDataRow(product);
-      tableHeading.insertAdjacentElement("afterend", dataRow);
+      tableBody.appendChild(dataRow);
       total += product.price;
     });
     totalPrice.textContent = `Rp ${total}`;
