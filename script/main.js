@@ -15,5 +15,4 @@ function inputData() {
     
     const stringifiedArrayObj = JSON.stringify(prodData.prodDataInput(prodName, prodPrice, prodPic))
     localStorage.setItem
-    
 }
